@@ -134,6 +134,7 @@ header > .container {
 }
 .contacts {
   margin-left: auto;
+  fill: currentColor;
 }
 .nav-link {
   color: var(--text-color);
@@ -151,10 +152,15 @@ header > .container {
   color: var(--subtext-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--focus-color);
+}
+.contacts-link-icon {
+  margin-right: 10px;
 }
 
 /* 2.2 Мейн */
@@ -163,9 +169,17 @@ header > .container {
 
 .hero {
   background-color: var(--herofootbcg-color);
-  text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/bcg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 .hero-main {
   color: var(--maintext-color);
@@ -204,6 +218,14 @@ header > .container {
 .benefits-item:not(:last-child) {
   margin-right: var(--indent);
 }
+
+.benefits-icon {
+  display: flex;
+  padding: 25px 100px;
+  background-color: var(--portfolio-btnsbcg);
+  margin-bottom: 30px;
+}
+
 .benefits-name {
   font-weight: 700;
   font-size: 14px;
@@ -255,6 +277,8 @@ section.work {
 .team-member {
   background-color: var(--mainbcg-color);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-name {
   font-weight: 500;
