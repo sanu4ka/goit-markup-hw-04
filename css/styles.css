@@ -293,9 +293,19 @@ section.work {
   line-height: 1.19;
   text-align: center;
   color: var(--subtext-color);
-  margin-bottom: 30px;
 }
-
+.team-social-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 32px 30px;
+}
+.team-social-list li {
+  display: inline-block;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
 /* 2.3 Футер */
 
 .footer {
